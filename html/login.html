@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Padaria Maneira</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Padaria Maneira</h1>
+
+        <nav>
+            <ul class="menu-navegacao">
+                <li><a href="index.html" class="link-inicial">Início</a></li>
+                <li><a href="login.html" class="link-login">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-login">
+        <div class="cartao-login">
+            <h2>Acessar Painel Inicial</h2>
+            <p class="subtitulo-login">Digite seus dados:</p>
+            <form action="#" method="post">
+                <div class="cartao-login">
+                    <label for="campo-email">Email:</label>
+                    <input 
+                    type="email" 
+                    id="campo-email" 
+                    name="campo-email" 
+                    required 
+                    placeholder="Digite seu email"><br>
+
+                    <label for="senha">Senha:</label>
+                    <input 
+                    type="password" 
+                    id="senha" 
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    minlength="6"
+                    required>
+                </div>
+
+                <div class="campo-lembrete">
+                    <input type="checkbox" id="lembrar-senha" name="lembrar">
+                    <label for="lembrar-senha">Lembrar senha</label>
+                </div>
+                <button type="submit" class="btn-submeter">Entrar</button>
+            </form>
+
+        </div>
+        <div class="rodape-card-login">
+            <a href="#">Esqueci minha senha</a>
+            <span> | </span>
+            <a href="#">Criar conta</a>
+        </div>
+    </main>
+</body>
+</html>

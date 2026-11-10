@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Arial, sans-serif;
+    background-color: #dfa85683;
+    color: #333;
+    line-height:2;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    background-color:  #f0b05183;
+    color: #fff;
+    padding: 14px 24px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0.5px;
+}
+
+.menu-navegacao{
+    list-style: none;
+    display:flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.menu-navegacao a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-navegacao a:hover,.menu-navegacao a.link-inicial{
+    color:#ffff;
+}
+
+.link-inicial:hover{
+    color: #144127;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+.link-inicial:hover{
+    background-color: #5e5e4f;
+    color: #0f0e01;
+}
+
+.link-login{
+    color: #144127;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+.link-login:hover{
+    background-color: #5e5e4f;
+    color: #0f0e01;
+}
+
+.conteudo{
+    max-width: 960px;
+    margin: 32px auto;
+    flex: 1;
+    width: 100%;
+}
+
+.secao-principal{
+    background-color: #daa94ec7;
+    border: 1px solid #dbd8b5;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.secao-principal h2{
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #144127;
+}
+
+.secao-principal p{
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.secao-principal a{
+    display: inline-block;
+    background-color: #e64653;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius:6px;
+}
+
+.secao-principal a:hover{
+    background-color: #39a867;
+    color: #d1e0db;
+}
+
+.secao-catalogo{
+    margin-bottom: 18px;
+}
+
+.titulo-catalogo{
+    margin-bottom: 18px;
+}
+
+.titulo-catalogo h2{
+    font-size: 22px;
+    color: #144127;
+}
+
+.titulo-catalogo p{
+    font-size: 14px;
+    color: #144127;
+}
+
+.grade{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    background-color: #cfa76983;
+    border: 1px solid #dba776;
+    border-radius: 8px;
+    color: #000000;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #1b1b1a;
+}
+
+.dados-item{
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape{
+    text-align: center;
+    background-color:  #dfa85683;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 20px;
+}
+.info-rodape{
+    padding: 50px;
+}
+.info-rodape a{
+    color: brown;
+}
